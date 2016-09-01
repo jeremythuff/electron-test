@@ -1,6 +1,30 @@
 @import "theme/variables.scss";
 
 body { 
-  margin: 0; 
-  background-color: $background; 
+  margin: 65px 10px 10px 10px; 
+  background-color: $background;
+}
+
+.drag-zone {
+	-webkit-app-region: drag
+}
+
+.drag-zone-kill {
+	-webkit-app-region: no-drag;
+}
+
+.window-controlls {
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.window-controll {
+	width: 10px;
+	heigth: 10px;
+	margin: 5px;
+}
+
+.window-controll:hover {
+	color: #efefef;
+	cursor: pointer;
 }

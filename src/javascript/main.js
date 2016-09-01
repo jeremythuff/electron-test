@@ -10,7 +10,9 @@ app.on("ready", () => {
 	mainWindow = new BrowserWindow({
 		width: 1280,
 		height: 900,
-		show: false
+		show: false,
+		center: true,
+		frame: false
 	});
 
 	mainWindow.setTitle("Stockings");

@@ -8,9 +8,13 @@
 	</head>
 	<body ng-app="app">
 
+		<div ng-include="'view/menu-bar.html'"></div>
 		<div ng-view></div>
 
 		<script src="app.js"></script>
 		<script src="conf/routes.js"></script>
+
+		<script src="controller/MenuBarController.js"></script>
+
 	</body>
 </html>

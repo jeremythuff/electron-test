@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es5",
+        "outFile": "dist/resources/js/app.js",
+        "pretty": true,
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "rootDir": "./src"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,3 +1,5 @@
+//Electron's main entry point
+
 const electron = require("electron");
 
 const {app, BrowserWindow, globalShortcut} = electron;

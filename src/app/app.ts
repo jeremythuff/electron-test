@@ -1,7 +1,9 @@
+// Type-script's main entry point
+
 function greeter(person: string) {
     return "Hello, " + person;
 }
 
-var user = "Jane User";
+var user = "World!";
 
 document.body.innerHTML = greeter(user);

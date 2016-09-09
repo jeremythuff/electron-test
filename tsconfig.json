@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "amd",
         "target": "es5",
-        "outFile": "dist/resources/js/app.js",
+        "outFile": "dist/app/resources/scripts/js/app.js",
         "pretty": true,
         "noImplicitAny": false,
         "sourceMap": false,

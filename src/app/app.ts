@@ -1,9 +1,7 @@
 // Type-script's main entry point
 
-function greeter(person: string) {
-    return "Hello, " + person;
-}
+import {View} from "./model/View";
 
-var user = "World!";
+let view = new View("src/app/view/main.html");
 
-document.body.innerHTML = greeter(user);
+console.log(view);

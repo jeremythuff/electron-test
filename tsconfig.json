@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
+        "baseUrl": ".",
         "module": "commonjs",
         "target": "es5",
         "outDir": "dist/",
         "pretty": true,
         "noImplicitAny": false,
-        "sourceMap": false,
-        "rootDir": "./src"
+        "sourceMap": false
     },
     "exclude": [
         "node_modules"

@@ -1,12 +1,10 @@
-//Electron's main entry point
+/// <reference path="./../typings/globals/github-electron/index.d.ts" />
+/// <reference path="./../typings/globals/node/index.d.ts" />
 
-const electron = require("electron");
+import * as electron from 'electron';
+import {app, globalShortcut, BrowserWindow} from 'electron';
 
-const {app, BrowserWindow, globalShortcut} = electron;
-
-let mainWindow;
-
-app.setName("Desktop App");
+let mainWindow:Electron.BrowserWindow;
 
 app.on("ready", () => {
 	mainWindow = new BrowserWindow({
@@ -15,10 +13,9 @@ app.on("ready", () => {
 		show: false
 	});
 
-	mainWindow.setTitle("Stockings");
 	mainWindow.loadURL(`file://${__dirname}/app/main.html`);
 	
-	mainWindow.once('ready-to-show', () => {
+	mainWindow.on('ready-to-show', () => {
   		mainWindow.show()
 	});
 
